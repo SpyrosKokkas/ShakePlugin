@@ -1,0 +1,31 @@
+<idea-plugin>
+
+    <id>com.s3nko.Shake</id>
+
+    <name>Shake</name>
+
+    <vendor>S3nko</vendor>
+
+    <description> Plugin that mimics a device shake mainly to open the debugging menu in an emulator </description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.android</depends>
+
+    <actions>
+        <action id="com.s3nko.shake.ShakeEmulator"
+                class="com.s3nko.shake.ShakeEmulator"
+                text="Shake"
+                description="Mimics shake"
+                icon="icons/shake.svg">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+            <add-to-group group-id="MainToolbarRight" anchor="last"/>
+        </action>
+    </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <notificationGroup
+                id="ShakeEmulator.Notifications"
+                displayType="BALLOON"
+                isLogByDefault="false"/>
+    </extensions>
+</idea-plugin>
