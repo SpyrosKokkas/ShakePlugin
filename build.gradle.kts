@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "com.s3nko"
-version = "0.1.0"
+version = "0.2.0"
 
 repositories {
     mavenCentral()
@@ -32,7 +32,7 @@ dependencies {
     intellijPlatform {
         create("IC", "2025.1")
         bundledPlugins("org.jetbrains.kotlin")
-        plugin("org.jetbrains.android:243.21565.23")
+        plugin("org.jetbrains.android:243.28141.18")
 
     }
 }
@@ -44,7 +44,7 @@ intellijPlatform {
         }
 
         changeNotes = """
-      Initial version
+      Minor Changes
     """.trimIndent()
     }
 }

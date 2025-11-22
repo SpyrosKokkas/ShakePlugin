@@ -95,14 +95,14 @@ class ShakeEmulator : AnAction() {
     }
 
     /**
-     * Notification extension funtion
+     * Notification extension function
      * @param message It holds the message we want to display
      * @param type It defines the notification type to display (e.g., Type.INFORMATION)
      */
     private fun Project.showNotification(message: String, type: NotificationType) {
         NotificationGroupManager.getInstance()
             .getNotificationGroup("ShakeEmulator.Notifications")
-            .createNotification("Shake result", message, type)
+            .createNotification("Shake", message, type)
             .notify(this)
     }
 
